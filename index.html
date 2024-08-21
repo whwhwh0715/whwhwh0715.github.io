@@ -1,8 +1,21 @@
 <!DOCTYPE html>
- 
+<html> 
+<title>Online Javascript Editor</title> 
+<head> 
+</head> 
+<body>
+  <script>
+    function showName() {
+    var url = document.getElementById("url").value;
+    var new_url = 'https://jx.xmflv.cc/?url=' + url;
+    console.log("新的链接是：" + new_url);
+    window.open(new_url);
+  }
+ </script>
 <h3 style="text-align:center;">Welcome to Movie World</h3>
     <form >
         <input type="text" id="url" placeholder="请输入链接">
         <button type="button" onclick="showName()">提交</button>
       </form>
-      
+</body>
+</html>
